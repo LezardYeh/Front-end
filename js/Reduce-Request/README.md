@@ -4,6 +4,6 @@
 
 有時候，若訊息為非敏感性且不常變動的，每次的Request彷彿只是不斷撈取一樣的結果，就成為毫無意義增加系統的運行成本，使系統效能降低(假如又遇到連續觸發Request的場合，真是一場災難)；此時，我們所期望的是只有**第一次**真正發送Request，爾後則繼續使用之前所取得的訊息。
 
-該範例將使用JS closure的特性及簡單的 Design Pattern 技巧實作出裡想結果。
+該範例將使用JS closure的特性及簡單的 Design Pattern 技巧實作出理想結果。
 
 <a href="http://jsbin.com/duwobaq" target="_blank">Demo</a>
