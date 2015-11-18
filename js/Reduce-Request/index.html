@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+</head>
+<body>
+  <button id="bt01">GetMessage</button>
+  <script>
+    var getMessage= function(){
+      
+      var ajaxResult=null; // 存放Ajax回來的結果
+      
+      alert('send request!');
+      $.ajax({
+        async :false,
+        url: 'http://output.jsbin.com/yukele.js',
+        dataType: 'json',
+        success: function(data) {
+          ajaxResult=data;
+          
+          //********************************
+          //* 改寫 getMessage 回傳 ajaxResult
+          //********************************
+          getMessage=function(){
+            return ajaxResult;
+          };
+          
+        }
+      });
+      
+      //***********************************
+      //* 執行新的 getMessage 取得 ajaxResult
+      //***********************************
+      return getMessage();
+    };
+
+    $('#bt01').click(function(){
+      alert('message ="' + getMessage().Content+'"');
+    });
+  </script>
+</body>
+</html>
