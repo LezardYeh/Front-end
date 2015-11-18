@@ -5,4 +5,6 @@
 > 注意：position:absolute使用時，要定義上層物件的position，否則位置會錯誤。
 
 ## 效果預覽 ##
-<iframe style="width:100%; border:1px solid #CCC;" src="https://htmlpreview.github.io/?https://github.com/LezardYeh/Front-end/blob/master/css/Cell-Disabled/index.html"/>
+<button>
+[Demo](https://htmlpreview.github.io/?https://github.com/LezardYeh/Front-end/blob/master/css/Cell-Disabled/index.html "Demo")
+</button>
